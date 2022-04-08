@@ -1,0 +1,64 @@
+body {
+	background: url("../img/bg.jpg");
+}
+
+.container {
+	max-width: 1000px;
+	margin: 10px auto 0;
+	padding: 0 10px;
+	
+}
+.page {
+	background-color: #42313A;
+	border: 2px dashed #6C2D2C;
+}
+.page__title {
+	color: #9F4636;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 40px;
+}
+
+a,
+ul{
+	color: #F1DCC9;
+}
+
+.page__body {
+	padding: 0 10px 10px;
+}
+
+.page__book {
+	height: 50px;
+	border: 2px dashed #6C2D2C;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+.page__titlebook>span,
+.page__book>a {
+	flex: 0 0 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page__titlebook{
+	display: flex;
+	justify-content:space-between;
+	color: #F1DCC9;
+	font-size: 30px;
+}
+
+._notHere {
+	opacity: .5;
+}
+
+/*
+	#42313A Красное дерево
+	#6C2D2C Каштан
+	#9F4636 Кожа
+	#F1DCC9 Пергамент
+*/

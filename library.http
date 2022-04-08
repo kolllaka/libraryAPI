@@ -1,0 +1,22 @@
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+"name_author":"Author1",
+"name_book":"Book1",
+"genre":"Genre1",
+"publication_year":"1971",
+"num_pages":192,
+"bbk":"32.844-017",
+"is_here":false
+}
+
+####
+GET http://localhost:8080/books/123/089cd5af-263b-41d9-a5da-5cccb26c0f0f
+
+####
+GET http://localhost:8080/books/123
+
+####
+GET http://localhost:8080/books

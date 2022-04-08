@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/styles0.css">
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<title>{{.Title}}</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="page">
+			<div class="page__title">{{.Title}}</div>
+			<div class="page__body">
+				<ul>
+
+					<li>
+						<div class="page__titlebook">
+							<span>Название книги:</span> <span>BBK:</span>
+						</div>
+					</li>
+
+					{{range .Books}}
+					{{if .IsHere}}
+					<li>
+						<div class="page__book">
+							<a href="/books/{{.BBK}}/{{.ID}}">{{.NameBook}}</a> <a href="/books/{{.BBK}}/">{{.BBK}}</a>
+						</div>
+					</li>
+					{{else}}
+					<li class="_notHere">
+						<div class="page__book">
+							<a href="/books/{{.BBK}}/{{.ID}}">{{.NameBook}}</a> <a href="/books/{{.BBK}}/">{{.BBK}}</a>
+						</div>
+					</li>
+					{{end}}
+					{{end}}
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="/static/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
